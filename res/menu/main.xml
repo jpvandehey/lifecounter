@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <item
+        android:id="@+id/player_count"
+        android:orderInCategory="1"
+        android:showAsAction="never"
+        android:title="@string/player_count_settings"/>
+    
+    <item 
+        android:orderInCategory="2"
+        android:showAsAction="never"
+        android:title="@string/default_life_settings"
+        android:id="@+id/default_life_settings"
+        >
+        
+    </item>
+    
+    <item        
+        android:orderInCategory="3"
+        android:title="@string/new_game"
+        android:showAsAction="never"
+        android:id="@+id/new_game"
+        />    
+
+</menu>

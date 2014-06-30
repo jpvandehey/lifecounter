@@ -1,0 +1,222 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    android:background="#000000">
+
+	<TextView
+	    android:id="@+id/general_damage_player_3"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+id/general_damage_player_2"
+	    android:layout_marginTop="44dp"
+	    android:text="@string/player_3"
+	    android:textColor="#FFFFFF"
+	    android:textSize="20sp" />
+
+	<TextView
+	    android:id="@+id/general_damage_player_4"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+id/general_damage_player_3"
+	    android:layout_marginTop="46dp"
+	    android:text="@string/player_4"
+	    android:textColor="#FFFFFF"
+	    android:textSize="20sp" />
+
+	<TextView
+	    android:id="@+id/general_damage_player_2"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+id/general_damage_player_1"
+	    android:layout_marginTop="46dp"
+	    android:text="@string/player_2"
+	    android:textColor="#FFFFFF"
+	    android:textSize="20sp" />
+
+	<Button
+	    android:id="@+id/general_damage_plus_4"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/general_damage_player_4"
+	    android:layout_alignBottom="@+id/general_damage_player_4"
+	    android:layout_centerHorizontal="true"
+	    android:background="#FFFFFF"
+	    android:text="@string/plus_symbol" 
+	    android:onClick="on_click_plus_general"/>
+
+	<Button
+	    android:id="@+id/general_damage_plus_3"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/general_damage_player_3"
+	    android:layout_alignBottom="@+id/general_damage_player_3"
+	    android:layout_alignLeft="@+id/general_damage_plus_4"
+	    android:background="#FFFFFF"
+	    android:text="@string/plus_symbol" 
+	    android:onClick="on_click_plus_general"/>
+
+	<Button
+	    android:id="@+id/general_damage_plus_2"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/general_damage_player_2"
+	    android:layout_alignBottom="@+id/general_damage_player_2"
+	    android:layout_alignLeft="@+id/general_damage_plus_3"
+	    android:background="#FFFFFF"
+	    android:text="@string/plus_symbol" 
+	    android:onClick="on_click_plus_general"/>
+
+	<Button
+	    android:id="@+id/general_damage_plus_1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/general_damage_player_1"
+	    android:layout_alignBottom="@+id/general_damage_player_1"
+	    android:layout_alignLeft="@+id/general_damage_plus_2"
+	    android:background="#FFFFFF"
+	    android:text="@string/plus_symbol" 
+	    android:onClick="on_click_plus_general"/>
+
+	<TextView
+	    android:id="@+id/player_name_general"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/general_damage_title"
+	    android:layout_toLeftOf="@+id/general_damage_minus_1"
+	    android:text="@string/player_1"
+	    android:textColor="#FFFFFF"
+	    android:textSize="20sp" />
+
+	<Button
+	    android:id="@+id/general_damage_minus_1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/general_damage_plus_1"
+	    android:layout_alignBottom="@+id/general_damage_plus_1"
+	    android:layout_alignParentRight="true"
+	    android:background="#FFFFFF"
+	    android:onClick="on_click_minus_general"
+	    android:text="@string/minus_symbol" />
+
+	<Button
+	    android:id="@+id/general_damage_minus_2"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/general_damage_plus_2"
+	    android:layout_alignBottom="@+id/general_damage_plus_2"
+	    android:layout_alignParentRight="true"
+	    android:background="#FFFFFF"
+	    android:onClick="on_click_minus_general"
+	    android:text="@string/minus_symbol" />
+
+	<Button
+	    android:id="@+id/general_damage_minus_3"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/general_damage_plus_3"
+	    android:layout_alignBottom="@+id/general_damage_plus_3"
+	    android:layout_alignParentRight="true"
+	    android:background="#FFFFFF"
+	    android:onClick="on_click_minus_general"
+	    android:text="@string/minus_symbol" />
+
+	<Button
+	    android:id="@+id/general_damage_minus_4"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/general_damage_plus_4"
+	    android:layout_alignBottom="@+id/general_damage_plus_4"
+	    android:layout_alignParentRight="true"
+	    android:background="#FFFFFF"
+	    android:onClick="on_click_minus_general"
+	    android:text="@string/minus_symbol" />
+
+	<TextView
+	    android:id="@+id/general_damage_1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/general_damage_plus_1"
+	    android:layout_alignBottom="@+id/general_damage_plus_1"
+	    android:layout_alignLeft="@+id/general_damage_2"
+	    android:text="@string/zero"
+	    android:textColor="#FFFFFF"
+	    android:textSize="20sp" />
+
+	<TextView
+	    android:id="@+id/general_damage_4"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/general_damage_plus_4"
+	    android:layout_alignBottom="@+id/general_damage_plus_4"
+	    android:layout_marginLeft="17dp"
+	    android:layout_toRightOf="@+id/general_damage_plus_4"
+	    android:text="@string/zero"
+	    android:textColor="#FFFFFF"
+	    android:textSize="20sp" />
+
+	<TextView
+	    android:id="@+id/general_damage_3"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/general_damage_minus_3"
+	    android:layout_alignBottom="@+id/general_damage_minus_3"
+	    android:layout_alignLeft="@+id/general_damage_4"
+	    android:text="@string/zero"
+	    android:textColor="#FFFFFF"
+	    android:textSize="20sp" />
+
+	<TextView
+	    android:id="@+id/general_damage_2"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/general_damage_player_3"
+	    android:layout_alignLeft="@+id/general_damage_3"
+	    android:text="@string/zero"
+	    android:textColor="#FFFFFF"
+	    android:textSize="20sp" />
+
+	<com.google.ads.AdView
+	    android:id="@+id/adView"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentTop="true"
+	    android:layout_toRightOf="@+id/general_damage_player_1"
+	    ads:adSize="BANNER"
+	    ads:adUnitId="ca-app-pub-2955120513949264/4156816033"
+	    ads:loadAdOnCreate="true"
+	    ads:testDevices="5554, TEST_DEVICE_ID" >
+	</com.google.ads.AdView>
+
+	<TextView
+	    android:id="@+id/general_damage_title"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/general_damage_player_1"
+	    android:layout_below="@+id/adView"
+	    android:layout_marginTop="39dp"
+	    android:text="@string/general_damage_title"
+	    android:textColor="#FFFFFF"
+	    android:textSize="20sp" />
+
+	<TextView
+	    android:id="@+id/general_damage_player_1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/general_damage_player_2"
+	    android:layout_below="@+id/player_name_general"
+	    android:layout_marginTop="39dp"
+	    android:text="@string/player_1"
+	    android:textColor="#FFFFFF"
+	    android:textSize="20sp" />
+		    
+</RelativeLayout>

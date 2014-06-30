@@ -1,0 +1,183 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    android:background="#000000">
+    
+		<com.google.ads.AdView
+		    android:id="@+id/adView"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentTop="true"
+		    android:layout_centerHorizontal="true"
+		    ads:adSize="BANNER"
+		    ads:adUnitId="ca-app-pub-2955120513949264/8726616437"
+		    ads:loadAdOnCreate="true"
+		    ads:testDevices="5554, TEST_DEVICE_ID" >
+		</com.google.ads.AdView>    
+
+		<Button
+		    android:id="@+id/minus_button_1"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignLeft="@+id/plus_button_1"
+		    android:layout_alignParentBottom="true"
+		    android:minHeight="70dp"
+		    android:minWidth="80dp"
+		    android:onClick="on_click_minus"
+		    android:text="@string/minus_symbol" 
+		    android:background="#FFFFFF"/>
+
+		<Button
+		    android:id="@+id/minus_button_main_2"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignBaseline="@+id/minus_button_1"
+		    android:layout_alignBottom="@+id/minus_button_1"
+		    android:layout_alignLeft="@+id/plus_button_main_2"
+		    android:background="#FFFFFF"
+		    android:minHeight="70dp"
+		    android:minWidth="80dp"
+		    android:onClick="on_click_minus"
+		    android:text="@string/minus_symbol" />
+
+		<TextView
+		    android:id="@+id/life_total_1"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_above="@+id/minus_button_1"
+		    android:layout_alignLeft="@+id/minus_button_1"
+		    android:layout_marginLeft="19dp"
+		    android:clickable="true"
+		    android:onClick="on_click_life"
+		    android:text="@string/default_life"
+		    android:textColor="#FFFFFF"
+		    android:textSize="30sp" />
+
+		<TextView
+		    android:id="@+id/player_name_3"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_above="@+id/plus_button_1"
+		    android:layout_alignLeft="@+id/plus_button_1"
+		    android:clickable="true"
+		    android:onClick="on_click_name"
+		    android:paddingLeft="3dp"
+		    android:text="@string/player_3"
+		    android:textColor="#FFFFFF"
+		    android:textSize="20sp" />
+
+		<TextView
+		    android:id="@+id/life_total_main_2"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_above="@+id/minus_button_main_2"
+		    android:layout_centerHorizontal="true"
+		    android:clickable="true"
+		    android:onClick="on_click_life"
+		    android:text="@string/default_life"
+		    android:textColor="#FFFFFF"
+		    android:textSize="30sp" />
+
+		<Button
+		    android:id="@+id/plus_button_main"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignBaseline="@+id/plus_button_main_2"
+		    android:layout_alignBottom="@+id/plus_button_main_2"
+		    android:layout_alignLeft="@+id/player_name_1"
+		    android:background="#FFFFFF"
+		    android:minHeight="70dp"
+		    android:minWidth="80dp"
+		    android:onClick="on_click_plus"
+		    android:text="@string/plus_symbol" />
+
+		<Button
+		    android:id="@+id/plus_button_main_2"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_above="@+id/life_total_main_2"
+		    android:layout_centerHorizontal="true"
+		    android:background="#FFFFFF"
+		    android:minHeight="70dp"
+		    android:minWidth="80dp"
+		    android:onClick="on_click_plus"
+		    android:text="@string/plus_symbol" />
+
+		<TextView
+		    android:id="@+id/life_total_main"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignBaseline="@+id/life_total_main_2"
+		    android:layout_alignBottom="@+id/life_total_main_2"
+		    android:layout_alignLeft="@+id/minus_button_main"
+		    android:layout_centerHorizontal="false"
+		    android:layout_marginLeft="16dp"
+		    android:clickable="true"
+		    android:onClick="on_click_life"
+		    android:paddingRight="7dp"
+		    android:text="@string/default_life"
+		    android:textColor="#FFFFFF"
+		    android:textSize="30sp" />
+
+		<TextView
+		    android:id="@+id/player_name_1"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignBaseline="@+id/player_name_2"
+		    android:layout_alignBottom="@+id/player_name_2"
+		    android:layout_alignLeft="@+id/minus_button_main"
+		    android:clickable="true"
+		    android:onClick="on_click_name"
+		    android:paddingLeft="3dp"
+		    android:text="@string/player_1"
+		    android:textColor="#FFFFFF"
+		    android:textSize="20sp" />
+
+		<TextView
+		    android:id="@+id/player_name_2"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_above="@+id/plus_button_main_2"
+		    android:layout_alignLeft="@+id/plus_button_main_2"
+		    android:clickable="true"
+		    android:onClick="on_click_name"
+		    android:paddingLeft="3dp"
+		    android:text="@string/player_2"
+		    android:textColor="#FFFFFF"
+		    android:textSize="20sp" />
+
+		<Button
+		    android:id="@+id/plus_button_1"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_above="@+id/life_total_1"
+		    android:layout_marginLeft="43dp"
+		    android:layout_toRightOf="@+id/plus_button_main_2"
+		    android:background="#FFFFFF"
+		    android:minHeight="70dp"
+		    android:minWidth="80dp"
+		    android:onClick="on_click_plus"
+		    android:text="@string/plus_symbol" />
+
+		<Button
+		    android:id="@+id/minus_button_main"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignBaseline="@+id/minus_button_main_2"
+		    android:layout_alignBottom="@+id/minus_button_main_2"
+		    android:layout_marginRight="50dp"
+		    android:layout_toLeftOf="@+id/minus_button_main_2"
+		    android:background="#FFFFFF"
+		    android:height="70dip"
+		    android:minWidth="80dp"
+		    android:onClick="on_click_minus"
+		    android:text="@string/minus_symbol" />
+
+</RelativeLayout>
