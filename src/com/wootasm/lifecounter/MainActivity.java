@@ -47,14 +47,6 @@ public class MainActivity extends Activity {
         
         tv_1 = set_default_life(tv_1, default_life);
         tv_2 = set_default_life(tv_2, default_life);
-        /*
-        ad_view = new AdView(this, AdSize.BANNER, AD_UNIT_ID);
-        
-        LinearLayout layout = (LinearLayout) findViewById(R.id.linearLayout);
-        layout.addView(ad_view);
-        
-        AdRequest ad_request = new AdRequest();
-        ad_request.addTestDevice("5554");*/
     }
     
     //Power saving through screen brightness manipulation.
@@ -223,29 +215,6 @@ public class MainActivity extends Activity {
                });
     	builder.show();
     }
-/*   
-    public void on_click_timer(View v){
-    	
-    	final Handler timer_handler = new Handler();
-    	final Runnable timer_runnable = new Runnable(){
-    		
-    		@Override
-    		public void run(){
-    	    	long start_time = 0;
-    			TextView timer_text_view = (TextView) findViewById(R.id.round_timer);
-    			long millis = System.currentTimeMillis() - start_time;
-    			int seconds = (int) (millis / 60);
-    			int minutes = seconds / 60;
-    			seconds = seconds % 60;
-    			
-    			timer_text_view.setText(String.format("%d:%02d", minutes, seconds));
-    			
-    			timer_handler.postDelayed(this, 500);
-    		}
-    	};    	
-		timer_handler.removeCallbacks(timer_runnable);
-		timer_handler.postDelayed(timer_runnable, 0);
-    }*/
     
     public void on_click_minus(View v){
     	int number;
